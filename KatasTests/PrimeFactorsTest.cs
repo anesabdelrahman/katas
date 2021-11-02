@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Katas;
+﻿using Katas;
 using NUnit.Framework;
 
 namespace KatasTests
@@ -30,27 +27,6 @@ namespace KatasTests
             var sut = new PrimeFactor();
             var result = sut.GetPrimeFactors(number);
             Assert.AreEqual(result, expectedFactors);
-        }
-    }
-
-    public class PrimeFactor
-    {
-        public IList<int> GetPrimeFactors(int number)
-        {
-            var factors = new List<int>();
-            for (int divisor = 2; divisor <= Math.Sqrt(number); divisor++)
-            {
-                for (; number % divisor == 0; number /= divisor)
-                {
-                    factors.Add(divisor);
-                }
-            }
-
-            if (number > 1)
-            {
-                factors.Add(number);
-            }
-            return factors;
         }
     }
 }

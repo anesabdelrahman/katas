@@ -32,7 +32,7 @@ namespace KatasTests
 
         internal int AddArrayElements(int[] arr)
         {
-            var sum = 0;
+            //var sum = 0;
             //foreach (var item in arr)
             //{
             //    sum += item;
