@@ -21,9 +21,9 @@ namespace Katas
 
         public static Tuple<char?, int> LongestRepetitionTwo(string input)
             => input
-               .Select((x, i) => new Tuple<char?, int>(x, input.Substring(i).TakeWhile(y => y == x).Count()))
-               .OrderByDescending(x => x.Item2)
-               .FirstOrDefault()
+                .Select((x, i) => new Tuple<char?, int>(x, input.Substring(i).TakeWhile(y => y == x).Count()))
+                .OrderByDescending(x => x.Item2)
+                .FirstOrDefault()
                ?? new Tuple<char?, int>(null, 0);
     }
 }
