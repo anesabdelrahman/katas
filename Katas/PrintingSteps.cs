@@ -11,10 +11,7 @@ namespace Katas
         {
             for (var i = 1; i <= steps; i++)
             {
-                var str1 = new string('#', i);
-                var str2 = new string(' ', steps-i);
-
-                var current = string.Concat(str1, str2);
+                var current = string.Concat(new string('#', i), new string(' ', steps - i));
                 Console.WriteLine(current);
             }
         }
