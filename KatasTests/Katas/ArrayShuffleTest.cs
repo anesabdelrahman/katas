@@ -2,7 +2,7 @@
 using Katas;
 using NUnit.Framework;
 
-namespace KatasTests
+namespace KatasTests.Katas
 {
     [TestFixture]
     public class ArrayShuffleTest
@@ -15,11 +15,11 @@ namespace KatasTests
         [Test]
         public void Test()
         {
-            var lower = 1; 
+            var lower = 1;
             var upper = 7;
             var sut = new ArrayShuffle();
             var result = sut.ShuffleArray(lower, upper);
-            
+
             Assert.NotNull(result);
         }
     }

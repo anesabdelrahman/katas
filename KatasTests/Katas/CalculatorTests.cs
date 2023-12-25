@@ -2,7 +2,7 @@
 using Katas;
 using NUnit.Framework;
 
-namespace KatasTests
+namespace KatasTests.Katas
 {
     public class CalculatorTests
     {

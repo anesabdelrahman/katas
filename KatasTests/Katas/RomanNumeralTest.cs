@@ -1,7 +1,7 @@
 ﻿using Katas;
 using NUnit.Framework;
 
-namespace KatasTests
+namespace KatasTests.Katas
 {
     [TestFixture]
     public class RomanNumeralTests
@@ -25,7 +25,7 @@ namespace KatasTests
         {
             var sut = new RomanNumeral();
             var result = sut.GetRomanNumeral(input);
-            
+
             Assert.AreEqual(result, expected);
         }
     }

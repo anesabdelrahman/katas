@@ -1,7 +1,7 @@
 ﻿using Katas;
 using NUnit.Framework;
 
-namespace KatasTests
+namespace KatasTests.Katas
 {
     [TestFixture]
     public class QueueWeaveTest
@@ -20,7 +20,7 @@ namespace KatasTests
             var firstQueue = new Queue();
             firstQueue.Add(1);
             firstQueue.Add(2);
-            
+
             Assert.AreEqual(1, firstQueue.Peek());
             Assert.AreEqual(1, firstQueue.Peek());
             Assert.AreEqual(1, firstQueue.Remove());
@@ -32,7 +32,7 @@ namespace KatasTests
         {
             var firstQueue = new Queue();
             var secondQueue = new Queue();
-            
+
             firstQueue.Add(1);
             firstQueue.Add(2);
             firstQueue.Add(3);

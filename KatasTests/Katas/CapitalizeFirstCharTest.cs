@@ -2,7 +2,7 @@
 using Katas;
 using NUnit.Framework;
 
-namespace KatasTests
+namespace KatasTests.Katas
 {
     [TestFixture]
     public class CapitalizeFirstCharTest
@@ -15,7 +15,7 @@ namespace KatasTests
         [Test]
         [TestCase("hi there, how is it going?", "Hi There, How Is It Going?")]
         [TestCase("i love breakfast at bill miller bbq", "I Love Breakfast At Bill Miller Bbq")]
-        
+
         public void Test(string inputString, string expected)
         {
             var result = new CapitalizeFirstChar().Capitalize(inputString);

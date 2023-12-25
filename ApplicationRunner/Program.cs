@@ -52,12 +52,12 @@ namespace ApplicationRunner
 
             //var lowNums = numbers.Where(x => x > 5).Where(y => y % 2 == 0).Max();
 
-            string x = "1,2,3";
+            //string x = "1,2,3";
 
-            var result = x.Split(',').Sum(i => int.Parse(i));
+            //var result = x.Split(',').Sum(i => int.Parse(i));
 
 
-            Console.WriteLine($"result {result} ");
+            //Console.WriteLine($"result {result} ");
 
             //foreach (var x in lowNums)
 
@@ -67,7 +67,7 @@ namespace ApplicationRunner
 
             //}
 
-            Console.ReadLine();
+            //Console.ReadLine();
 
 
 
@@ -82,6 +82,10 @@ namespace ApplicationRunner
 
 
             //Console.Read();
+
+            var instance = new TestingReadOnly().VERSION;
+            Console.WriteLine(instance);
+            Console.ReadLine();
         }
 
         private static char GetMostRepeatedCharacter(string input)
@@ -103,6 +107,15 @@ namespace ApplicationRunner
 
 
             return result;
+        }
+    }
+
+    class TestingReadOnly
+    {
+        public readonly int VERSION = 5;
+        public TestingReadOnly()
+        {
+            //VERSION = 6;
         }
     }
 }

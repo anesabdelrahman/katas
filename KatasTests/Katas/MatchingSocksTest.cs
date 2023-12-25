@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Katas;
 using NUnit.Framework;
 
-namespace KatasTests
+namespace KatasTests.Katas
 {
     [TestFixture]
     public class MatchingSocksTest
@@ -40,7 +40,7 @@ namespace KatasTests
         public void Test3()
         {
             var numberOfSocks = 9;
-            var socksColors = new List<int> { 10 ,20 ,20 ,10 ,10 ,30 ,50 ,10 ,20 };
+            var socksColors = new List<int> { 10, 20, 20, 10, 10, 30, 50, 10, 20 };
             var expectedResult = 3;
 
             var sut = new MatchingSocks();
