@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Katas
+﻿namespace Katas
 {
     public class Matrix
     {

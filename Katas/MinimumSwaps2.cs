@@ -1,5 +1,4 @@
-﻿using System;
-namespace Katas
+﻿namespace Katas
 {
     public class MinimumSwaps2
     {
