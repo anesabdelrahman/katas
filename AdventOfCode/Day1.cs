@@ -26,7 +26,7 @@ namespace AdventOfCode
            {
                result += CalculateCodes(line);
            }
-
+           // return result
            return result;
         }
     }
