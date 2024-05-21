@@ -1,9 +1,6 @@
-﻿using System;
-using System.Linq;
-using Katas;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
-namespace KatasTests.Katas
+namespace Tests.Katas
 {
     [TestFixture]
     public class WordReversalTest
@@ -19,16 +16,6 @@ namespace KatasTests.Katas
         {
             var result = new WordReversal().Reverse(input);
             Assert.AreEqual(expected, result);
-        }
-    }
-
-    public class WordReversal
-    {
-        public string Reverse(string input)
-        {
-            var words = input.Split(' ');
-            var reversed = words.Reverse();
-            return string.Join(' ', reversed);
         }
     }
 }

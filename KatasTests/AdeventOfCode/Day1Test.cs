@@ -1,7 +1,7 @@
 ﻿using AdventOfCode;
 using NUnit.Framework;
 
-namespace KatasTests.Katas
+namespace Tests.AdeventOfCode
 {
     [TestFixture]
     public class Day1Test
