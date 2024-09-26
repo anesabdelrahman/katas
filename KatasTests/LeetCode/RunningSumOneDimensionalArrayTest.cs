@@ -1,7 +1,7 @@
 ﻿using Katas.LeetCode;
 using NUnit.Framework;
 
-namespace Tests.Katas.Arrays
+namespace Tests.LeetCode
 {
     [TestFixture]
     public class RunningSumOneDimensionalArrayTest
@@ -25,7 +25,7 @@ namespace Tests.Katas.Arrays
         [TestCase(new int[] { 1, 2, 3, 4 }, new int[] { 1, 3, 6, 10 })]
         [TestCase(new int[] { 1, 1, 1, 1, 1 }, new int[] { 1, 2, 3, 4, 5 })]
         [TestCase(new int[] { 3, 1, 2, 10, 1 }, new int[] { 3, 4, 6, 16, 17 })]
-        public void Test1(int[] input, int[] expected)
+        public void Test(int[] input, int[] expected)
         {
             var sut = new RunningSumOneDimensionalArray();
             var result = sut.RunningSum(input);
