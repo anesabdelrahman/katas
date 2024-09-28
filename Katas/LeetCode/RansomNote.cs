@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Katas.Strings
+namespace Katas.LeetCode
 {
     public class RansomNote
     {
