@@ -45,7 +45,7 @@ namespace Tests.LeetCode
         [TestCase(14, 6)]
         [TestCase(8, 4)]
         [TestCase(123, 12)]
-        public void Test1(int input, int expected)
+        public void Test(int input, int expected)
         {
             var sut = new NumberOfStepsToZero();
             var result = sut.NumberOfSteps(input);
