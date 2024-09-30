@@ -1,8 +1,7 @@
-﻿using Katas;
-using Katas.Arrays;
+﻿using Katas.LeetCode;
 using NUnit.Framework;
 
-namespace Tests.Katas.Arrays
+namespace Tests.LeetCode
 {
     [TestFixture]
     public class DuplicateZeroTest
@@ -16,7 +15,7 @@ namespace Tests.Katas.Arrays
         public void Test(int[] input, int[] expected)
         {
             var sut = new DuplicateZeros();
-            var result = sut.DuplicateZero(input);
+            var result = sut.DuplicateZero_AntherWorkingVersion(input);
             TestContext.WriteLine($"result: {result}");
             Assert.AreEqual(result, expected);
         }
