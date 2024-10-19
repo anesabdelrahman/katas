@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace Tests.LeetCode
 {
     //https://leetcode.com/problems/contiguous-array/description/
-    [TestFixture]
+    [TestFixture(Category = "Leetcode")]
     internal class FindingContiguousSubArraysOfEqualZerosAndOnesTest
     {
 

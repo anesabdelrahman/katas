@@ -3,7 +3,7 @@
 namespace Tests.LeetCode
 {
     //https://leetcode.com/problems/range-sum-query-immutable/description/
-    [TestFixture]
+    [TestFixture(Category = "Leetcode")]
     internal class FindingSumOfSubArraysUsingIndicesRangeTest
     {
 
