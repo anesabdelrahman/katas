@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace Tests.LeetCode
 {
     //https://leetcode.com/problems/subarray-sum-equals-k/description/
-    [TestFixture(Category = "Leetcode")]
+    [TestFixture(Category = "Leetcode", Reason = "Prefix sums")]
     internal class FindingSumOfSubArraysUsingKthElementTest
     {
 
