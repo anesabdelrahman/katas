@@ -1,0 +1,90 @@
+public class Queue<T>() where T : class
+{
+	private Stack<T> input =  new Stack<T>();
+	private Stack<T> output = new Stack<T>();
+	
+	public void Enqueue(T){
+		input.Push(T);	
+	}
+	
+	public T Dequeue() {
+		if (output.Count ==0){
+			while( input.Count != 0){
+				output.Push(input.Pop());
+			}
+		}
+		return output.Pop();
+	
+	}
+
+
+}
+
+	long result = array.Where(i => i % 2 == 0).Sum(i => (long)i);
+	
+	
+public static bool IsAnagram(string s1, string s2) {
+
+	if (s1 == null) throw new NullArgumentException("s1");
+	if (s2 == null) throw new NullArgumentException("s2");
+	
+	Dictionary<char, int> chars = new Dictionary<char, int>();
+	
+	for (char c in s1){
+		if (!chars.ContainKey(c)) {
+			chars[c] = 0;
+		}
+		chars[c]++;
+	}
+	
+	for (char c in s2) {
+		if (!chars.ContainKey(c)) {
+			return false;
+		}
+		chars[c]--;
+	}
+	return chars.Values.All(v => v == 0);
+}
+
+public static string Reverse(string word) {
+	var words = word.Split(' ');
+	words.Reverse();
+	return words.Join(' ');
+
+}
+
+
+
+***********************TRY ME*********************************
+bool isFibonacci(int  w)
+{
+       double X1 = 5 * Math.Pow(w, 2) + 4;
+       double X2 = 5 * Math.Pow(w, 2) - 4;
+
+       long X1_sqrt = (long)Math.Sqrt(X1);
+       long X2_sqrt = (long)Math.Sqrt(X2);   
+
+       return (X1_sqrt*X1_sqrt == X1) || (X2_sqrt*X2_sqrt == X2);
+}
+
+*****************************
+useEffect(() => { // run for the first time after the component renders and then with each component changes thereafter.
+console.log()
+})
+
+useEffect(() => { // run for the first time after the component renders but never again until component is removed/dismounted.
+console.log()
+}, [])
+
+useEffect(() => {// run for the first time after the component renders and then with change to the someVariable.
+console.log()
+}, [someVariable])
+
+
+useEffect(() => { // run for the first time after the component renders and then with change to the someVariable.
+console.log('effect running')
+
+return () => {
+	console.log('Clean up') // this is a cleanup function that runs after the previous console.log for the first time the component renders and then BEFORE it with each subsequent changes to component or someVariable.
+}
+}, [someVariable])
